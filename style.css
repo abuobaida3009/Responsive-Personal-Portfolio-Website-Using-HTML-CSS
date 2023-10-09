@@ -248,3 +248,83 @@ img{
     transform: translate(-10px);
 }
 /* service section code end here  */
+
+
+/* portfolio section start here */
+#portfolio{
+    padding: 60px 6%;
+    text-align: center;
+}
+#portfolio .sub-titel{
+    font-size: 40px;
+    color: #d9dae7;
+    font-weight: 600;
+}
+#portfolio .projecct-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+.projecct-list .project{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.projecct-list img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.project:hover img{
+    transform: scale(1.1);  
+}
+.project .layar{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(250,202,34,0.8), rgba(250,202,34,0.5));
+    border-radius: 10px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 30px;
+    transition: all 0.5s;
+}
+.project:hover .layar{
+    height: 100%;
+}
+.project .layar h2{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.project .layar p{
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 20px 0 30px;
+}
+.project .layar a{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #faca22;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.project .layar a:hover{
+    background: #faca22;
+    color: #fff;
+    border-radius: 2px solid #fff;
+}
+/* portfolio section end here */
