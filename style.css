@@ -204,5 +204,47 @@ img{
 
 
 /* service section code start here  */
-
+#service{
+    background-color: #f7f7f7;
+    padding: 60px 6% 80px;
+    text-align: center;
+}
+#service .sub-titel{
+    font-size: 40px;
+    color: #d9dae7;
+    font-weight: 600; 
+}
+#service .sub-titel .titel{
+    font-size: 16px;
+    font-weight: 400;
+}
+.servises-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 60px;
+    text-align: left;
+}
+.servises-parent .single-servise{
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.servises-parent .single-servise i{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.servises-parent .single-servise h2{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.servises-parent .single-servise:hover{
+    background-color: #faca22;
+    transform: translate(-10px);
+}
 /* service section code end here  */
