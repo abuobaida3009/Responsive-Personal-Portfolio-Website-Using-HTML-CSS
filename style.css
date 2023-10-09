@@ -30,6 +30,8 @@ img{
     color: #fff;
     font-size: 22px;
     font-weight: 700;
+    letter-spacing: 0.1em;
+
 }
 .header-top .logo a span{
     color: #faca22;
@@ -63,8 +65,8 @@ img{
 }
 .header-bottom{
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), #0b0d19), url(images/cover.jpg);
+    height: 140vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #0b0d19), url(images/cover6.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -120,5 +122,87 @@ img{
     color: #faca22;
     transform: scale(1.1);
 }
-
 /* header section code end here  */
+
+
+/* about section code start here  */
+.about{
+    width: 100%;
+    min-height: 100vh;
+    padding: 60px 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .about-left{
+    flex-basis: 36%;
+}
+.about .about-right{
+    flex-basis: 60%;
+} 
+.about-left img{
+    width: 100%;
+    border-radius: 15px;   
+}
+.section-titel .sub-titel{
+    font-size: 40px;
+    color: #d9dae7;
+    font-weight: 600;
+}
+.section-titel .title{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
+}
+.about-right .decp{
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 30px 0;
+}
+.about-right .tab-titel{
+    display: flex;
+    margin: 20px 0 30px;
+}
+.tab-titel .tab-links{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-titel .tab-links::after{
+    content: ("");
+    width: 0;
+    height: 3px;
+    background: #ffc800;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: all 0.5s;
+}
+.tab-titel .tab-links .active-link::after{
+    width: 50%;
+}
+.about-right .tab-contents ul li{
+    list-style: none;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #ffc800;
+    font-size: 16px;
+    font-weight: 500;
+}
+.about-right .tab-contents{
+    display: none;
+}
+.about-right .tab-contents.active-tab{
+    display: block;
+}
+/* about section code end here  */
+
+
+/* service section code start here  */
+
+/* service section code end here  */
