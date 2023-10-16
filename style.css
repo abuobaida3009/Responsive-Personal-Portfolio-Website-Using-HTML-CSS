@@ -328,3 +328,63 @@ img{
     border-radius: 2px solid #fff;
 }
 /* portfolio section end here */
+
+
+/* testimonial section code start here  */
+.testimonial{
+    padding: 60px 4% 80px;
+    text-align: center;
+}
+.testimonial .testimonial-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+.testimonial-list .review{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 1px;
+    border-radius: 10px;
+    padding: 40px 30px;
+    cursor: pointer;
+}
+.testimonial-list .review:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.review i{
+    font-size: 54px;
+    color: #faca22;
+}
+.review .review-text{
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: left;
+    padding: 20px 0 30px;  
+}
+.review .reviewd-by{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+    text-align: start;
+}
+.reviewd-by .img{
+    flex-basis: 20%;
+}
+.reviewd-by .img img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.reviewd-by .info{
+    height: 60px;
+}
+.reviewd-by .info .name{
+    font-size: 18px;
+    font-weight: 600;
+}
+.reviewd-by .info .resignation{
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+/* testimonial section code end here  */
