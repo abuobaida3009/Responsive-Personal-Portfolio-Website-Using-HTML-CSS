@@ -388,3 +388,82 @@ img{
     opacity: 0.8;
 }
 /* testimonial section code end here  */
+
+
+/* contact section start here  */
+.contact-section{
+    background-color: #faca22;
+    padding: 60px 8% 40px;
+    text-align: center;
+}
+.contact .section-titel .sub-titel{
+    color: white;
+}
+.contact-section .contact{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+.contact .contact-left,
+.contact .contact-right{
+    flex-basis: 50%;
+}
+.contact .contact-left form{
+    width: 100%;
+}
+.contact-left input,
+.contact-left textarea,
+.contact-left button{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #f7f7f7;
+    color: black;
+    resize: none;
+    font-size: 14px;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 6px;
+}
+.contact-left form button{
+    background: #000;
+    color: #fff;
+    font-size: 500;
+    margin: 0;
+    cursor: pointer;
+}
+.contact .vi{
+    border-left: 2px solid #fff;
+    height: 300px;
+}
+.contact .contact-right{
+    text-align: left;
+}
+.contact-right .col{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+.contact-right .col i{
+    font-size: 28px;
+    margin-right: 10px;
+}
+.col .info .titel{
+    font-size: 20px;
+}
+.copy-right{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 60px;
+}
+.copy-right a{
+    text-decoration: none;
+    color: #120f2d;
+}
+.copy-right a:hover{
+    color: #fff;
+}
+
+/* contact section end here  */
