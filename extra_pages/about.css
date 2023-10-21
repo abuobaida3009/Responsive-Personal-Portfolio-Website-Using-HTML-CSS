@@ -193,3 +193,164 @@ html{
     display: block;
 }
 /* about section code end here  */
+/* Responsive design code start here  */
+@media only screen and (max-width: 900px) {
+    .main-menu .fa-solid{
+        display: block;
+        color: #faca22;
+        font-size: 22px;
+    }
+    .main-menu ul{
+        background-color: #120f2d;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 60px;
+        z-index: 2;
+        transition: all 0.5s;
+    }
+    .main-menu ul li{
+        display: block;
+        color: #faca22;
+        margin: 25px;
+    }
+    .main-menu ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .about .about-left{
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+    .about .about-left img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .about .about-right{
+        flex-basis: 100%;
+    }
+    .about-right .tab-links{
+        margin-right: 60px;
+        font-size: 22px;
+    }
+    .about-right .tab-contents ul li{
+        font-size: 20px;
+    }
+    .about-right .tab-contents ul li span{
+        font-size: 18px;
+    }
+    .testimonial .testimonial-list{
+        grid-gap: 20px;
+    }
+    .testimonial-list .review{
+        padding: 30px 15px;
+    }
+    .reviewd-by .info .name{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 560px){
+    .header-bottom .bottom-left .name{
+        font-size: 40px;
+    }
+    .bottom-left .profession{
+        font-size: 20px;
+    }
+    .bottom-left .sort-desc{
+        font-size: 18px;
+        padding-right: 20%;
+    }
+    .about-left img{
+        width: 80%;
+    }
+    .about-right .tab-links{
+        margin-right: 30px;
+        font-size: 20px;
+    }
+    .about-right .tab-contents ul li,
+    .about-right .tab-contents ul li span{
+        font-size: 18px;
+    }
+    .servises-parent{
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 60px;
+        margin-left: 10px;
+    }
+    #portfolio .projecct-list{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .testimonial .testimonial-list{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .reviewd-by .info .resignation{
+        font-size: 16px;
+    }
+    .contact-section .contact{
+        flex-wrap: wrap;
+    }
+    .contact .contact-left,
+    .contact .contact-right{
+        flex-basis: 100%;
+    }
+    .contact .vi{
+        display: none;
+    }
+}
+@media only screen and (max-width: 450px){
+    .header-bottom .bottom-left .name{
+        font-size: 32px;
+    }
+    .bottom-left .profession{
+        font-size: 18px;
+    }
+    .bottom-left .sort-desc{
+        font-size: 16px;
+        padding-right: 6%;
+    }
+    .bottom-left .btn-cv{
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+    .section-titel .sub-titel{
+        font-size: 20px;
+    }
+    .about-left img{
+        width: 80%;
+    }
+    .about-right .tab-links{
+        margin-right: 25px;
+        font-size: 18px;
+    }
+    .about-right .tab-contents ul li,
+    .about-right .tab-contents ul li span{
+        font-size: 16px;
+    }
+    .servises-parent{
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    #portfolio .projecct-list{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .testimonial .testimonial-list{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+/* Responsive design code end here  */

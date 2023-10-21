@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* contact section start here  */
+.contact-section{
+    background-color: #faca22;
+    padding: 60px 8% 40px;
+    text-align: center;
+}
+.contact .section-titel .sub-titel{
+    color: white;
+}
+.contact-section .contact{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+.contact .contact-left,
+.contact .contact-right{
+    flex-basis: 50%;
+}
+.contact .contact-left form{
+    width: 100%;
+}
+.contact-left input,
+.contact-left textarea,
+.contact-left button{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #f7f7f7;
+    color: black;
+    resize: none;
+    font-size: 14px;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 6px;
+}
+.contact-left form button{
+    background: #000;
+    color: #fff;
+    font-size: 500;
+    margin: 0;
+    cursor: pointer;
+}
+.contact .vi{
+    border-left: 2px solid #fff;
+    height: 300px;
+}
+.contact .contact-right{
+    text-align: left;
+}
+.contact-right .col{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+
+}
+.contact-right .col i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.col .info .titel{
+    font-size: 18px;
+}
+.copy-right{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 60px;
+}
+.copy-right a{
+    text-decoration: none;
+    color: #120f2d;
+}
+.copy-right a:hover{
+    color: #fff;
+}
+
+/* contact section end here  */
+/* Responsive design code start here  */
+@media only screen and (max-width: 900px) {
+    .main-menu .fa-solid{
+        display: block;
+        color: #faca22;
+        font-size: 22px;
+    }
+    .main-menu ul{
+        background-color: #120f2d;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 60px;
+        z-index: 2;
+        transition: all 0.5s;
+    }
+    .main-menu ul li{
+        display: block;
+        color: #faca22;
+        margin: 25px;
+    }
+    .main-menu ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .about .about-left{
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+    .about .about-left img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .about .about-right{
+        flex-basis: 100%;
+    }
+    .about-right .tab-links{
+        margin-right: 60px;
+        font-size: 22px;
+    }
+    .about-right .tab-contents ul li{
+        font-size: 20px;
+    }
+    .about-right .tab-contents ul li span{
+        font-size: 18px;
+    }
+    .testimonial .testimonial-list{
+        grid-gap: 20px;
+    }
+    .testimonial-list .review{
+        padding: 30px 15px;
+    }
+    .reviewd-by .info .name{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 560px){
+    .header-bottom .bottom-left .name{
+        font-size: 40px;
+    }
+    .bottom-left .profession{
+        font-size: 20px;
+    }
+    .bottom-left .sort-desc{
+        font-size: 18px;
+        padding-right: 20%;
+    }
+    .about-left img{
+        width: 80%;
+    }
+    .about-right .tab-links{
+        margin-right: 30px;
+        font-size: 20px;
+    }
+    .about-right .tab-contents ul li,
+    .about-right .tab-contents ul li span{
+        font-size: 18px;
+    }
+    .servises-parent{
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 60px;
+        margin-left: 10px;
+    }
+    #portfolio .projecct-list{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .testimonial .testimonial-list{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .reviewd-by .info .resignation{
+        font-size: 16px;
+    }
+    .contact-section .contact{
+        flex-wrap: wrap;
+    }
+    .contact .contact-left,
+    .contact .contact-right{
+        flex-basis: 100%;
+    }
+    .contact .vi{
+        display: none;
+    }
+}
+@media only screen and (max-width: 450px){
+    .header-bottom .bottom-left .name{
+        font-size: 32px;
+    }
+    .bottom-left .profession{
+        font-size: 18px;
+    }
+    .bottom-left .sort-desc{
+        font-size: 16px;
+        padding-right: 6%;
+    }
+    .bottom-left .btn-cv{
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+    .section-titel .sub-titel{
+        font-size: 20px;
+    }
+    .about-left img{
+        width: 80%;
+    }
+    .about-right .tab-links{
+        margin-right: 25px;
+        font-size: 18px;
+    }
+    .about-right .tab-contents ul li,
+    .about-right .tab-contents ul li span{
+        font-size: 16px;
+    }
+    .servises-parent{
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    #portfolio .projecct-list{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .testimonial .testimonial-list{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+/* Responsive design code end here  */
